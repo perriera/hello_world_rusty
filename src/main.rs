@@ -3,10 +3,9 @@
 //
 
 fn main() {
-   let values = vec![1,2,3];
-   for a in values.iter() {
-       println!("a is {:?}", a);
-   }
+   let array = ["This","is","an","array"];
+   let array_slice = &array[1..4];
+   
 
 }
 
