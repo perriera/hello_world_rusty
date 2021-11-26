@@ -4,8 +4,8 @@
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), 
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).</br>
 > To add a tag to the git repository do:
-> > git tag -a v0.2.0 -m "Added hello_world"</br>
-> > git push origin v0.2.0
+> > git tag -a v0.3.0 -m "Added while loop"</br>
+> > git push origin v0.3.0
 > 
 
 IMPORTANT: 
@@ -21,6 +21,10 @@ Correct URL for github, (for source compare)</br>
 Adding mock test cases </br>
 Adding unit test cases </br>
 Updated README.md accordinging</br>
+
+#### 0.3.0 (2021-11-25)
+### Changed 
+- Added while loop
 
 #### 0.2.0 (2021-11-25)
 ### Changed 
