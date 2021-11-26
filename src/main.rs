@@ -3,10 +3,10 @@
 //
 
 fn main() {
-//    let name: &'static str = "Rust";
-   let mut some_string = String::new();
-   some_string = "Some string".to_owned();
-   let string_slice = &some_string;
+   let array = [1,2,3,4,5];
+   for a in array.iter() {
+       println!("{}", a);
+   }
    
 }
 
