@@ -3,12 +3,11 @@
 //
 
 fn main() {
-   let name = "Alex";
-   match name {
-       "Dave" => println!("oh hiya Dave!"),
-       "Sally" => println!("Hi Sally!"),
-       _ => println!("Wait, you're not Dave or Sally")
-   };
+//    let name: &'static str = "Rust";
+   let mut some_string = String::new();
+   some_string = "Some string".to_owned();
+   let string_slice = &some_string;
+   
 }
 
 //
