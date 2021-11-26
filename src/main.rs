@@ -3,10 +3,10 @@
 //
 
 fn main() {
-   let array = [1,2,3,4,5];
-   for a in array.iter() {
-       println!("{}", a);
-   }
+   let mut vector1: Vec<i32> = Vec::new();
+   let mut vector2: Vec<i32> = vec![1,2,3,4,5];
+   let mut vector3: Vec<bool> = Vec::with_capacity(10);
+
    
 }
 
