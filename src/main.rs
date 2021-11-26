@@ -3,11 +3,12 @@
 //
 
 fn main() {
-    let mut counter = 1;
-    while counter!=10 {
-        println!("Counter is: {}", counter);
-        counter = counter + 1;
-    }
+   let name = "Alex";
+   match name {
+       "Dave" => println!("oh hiya Dave!"),
+       "Sally" => println!("Hi Sally!"),
+       _ => println!("Wait, you're not Dave or Sally")
+   };
 }
 
 //
