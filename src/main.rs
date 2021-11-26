@@ -3,13 +3,9 @@
 //
 
 fn main() {
-    let mut end = false;
     let mut counter = 1;
-    while end==false {
+    while counter!=10 {
         println!("Counter is: {}", counter);
-        if counter==10 {
-            end = true;
-        }
         counter = counter + 1;
     }
 }
