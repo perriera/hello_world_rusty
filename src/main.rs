@@ -3,11 +3,11 @@
 //
 
 fn main() {
-   let mut vector1: Vec<i32> = Vec::new();
-   let mut vector2: Vec<i32> = vec![1,2,3,4,5];
-   let mut vector3: Vec<bool> = Vec::with_capacity(10);
+   let values = vec![1,2,3];
+   for a in values.iter() {
+       println!("a is {:?}", a);
+   }
 
-   
 }
 
 //
