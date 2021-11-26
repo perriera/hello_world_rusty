@@ -4,7 +4,7 @@
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), 
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).</br>
 > To add a tag to the git repository do:
-> > git tag -a v0.3.0 -m "Added while loop"</br>
+> > git tag -a v0.3.1 -m "Added while loop"</br>
 > > git push origin v0.3.0
 > 
 
@@ -34,6 +34,8 @@ Updated README.md accordinging</br>
 ### Changed 
 - Added to github
 
-[Unreleased]: https://github.com/perriera/hello_world_rusty/compare/v0.2.0...HEAD
+[Unreleased]: https://github.com/perriera/hello_world_rusty/compare/v0.3.1...HEAD
+[0.3.1]: https://github.com/perriera/hello_world_rusty/compare/v0.3.0...v0.3.1
+[0.3.0]: https://github.com/perriera/hello_world_rusty/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/perriera/hello_world_rusty/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/perriera/hello_world_rusty/releases/tag/v0.1.0
