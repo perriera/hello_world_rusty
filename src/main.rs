@@ -12,6 +12,9 @@ fn main() {
        println!("{}", a);
    }
 
+   let array = ["This","is","an","array"];
+   let array_slice = &array[0..4];
+
 }
 
 //
