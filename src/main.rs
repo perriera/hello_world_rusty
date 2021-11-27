@@ -10,11 +10,8 @@ fn multiplication_print_result(a: i32, b: i32) {
     println!("{:?}", a * b);
 }
 
-mod some_module {
-    pub fn say_hello() {
-        println!("Hello");
-    }
-}
+mod some_module;
+
 fn main() {
     let x = 2;
     let y = 3;
