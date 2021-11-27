@@ -2,12 +2,19 @@
 // https://levelup.gitconnected.com/rust-with-visual-studio-code-46404befed8
 //
 
-fn main() {
-    let mut string1: String = String::new();
-    string1 = "A string".to_uppercase();
-    let string2 = &string1;
-    println!("{:?}",string1);
+fn multiplication(a: i32, b: i32) -> i32 {
+    a*b
+}
 
+fn multiplication_print_result(a:i32,b:i32) {
+    println!("{:?}",a*b);
+}
+
+fn main() {
+    let x = 2;
+    let y = 3;
+    println!("{:?}",multiplication(x,y));
+    multiplication_print_result(x,y);
 
 }
 
