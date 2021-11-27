@@ -3,19 +3,24 @@
 //
 
 fn multiplication(a: i32, b: i32) -> i32 {
-    a*b
+    a * b
 }
 
-fn multiplication_print_result(a:i32,b:i32) {
-    println!("{:?}",a*b);
+fn multiplication_print_result(a: i32, b: i32) {
+    println!("{:?}", a * b);
 }
 
+mod some_module {
+    pub fn say_hello() {
+        println!("Hello");
+    }
+}
 fn main() {
     let x = 2;
     let y = 3;
-    println!("{:?}",multiplication(x,y));
-    multiplication_print_result(x,y);
-
+    println!("{:?}", multiplication(x, y));
+    multiplication_print_result(x, y);
+    some_module::say_hello();
 }
 
 //
