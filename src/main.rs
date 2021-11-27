@@ -3,11 +3,11 @@
 //
 
 fn main() {
-    let x = 1;
-    {
-        let y = 2;
-        println!("x: {}\n y: {}",x,y);
-    }
+    let mut string1: String = String::new();
+    string1 = "A string".to_uppercase();
+    let string2 = &string1;
+    println!("{:?}",string1);
+
 
 }
 
