@@ -2,22 +2,32 @@
 // https://levelup.gitconnected.com/rust-with-visual-studio-code-46404befed8
 //
 
-fn multiplication(a: i32, b: i32) -> i32 {
-    a * b
+#[derive(Debug)]
+struct User {
+    name: String,
+    email: String,
+    age: u16,
 }
 
-fn multiplication_print_result(a: i32, b: i32) {
-    println!("{:?}", a * b);
+impl User {
+    pub fn print_user(self) {
+        println!(
+            "The name of the user is {}.\nHis email is: {}.\nHe is {} old",
+            self.name, self.email, self.age
+        )
+    }
 }
-
-mod some_module;
-
 fn main() {
-    let x = 2;
-    let y = 3;
-    println!("{:?}", multiplication(x, y));
-    multiplication_print_result(x, y);
-    some_module::say_hello();
+    let new_user = User {
+        name: "Dave".to_string(),
+        email: "david@mail.com".to_string(),
+        age: 32,
+    };
+
+    // println!("{:#?}", new_user);
+
+    // print_user(new_user);
+    new_user.print_user();
 }
 
 //
