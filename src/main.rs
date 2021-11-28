@@ -1,38 +1,32 @@
 //
 // https://levelup.gitconnected.com/rust-with-visual-studio-code-46404befed8
-//
-
-extern crate regex;
-extern crate some_crate;
-
-//
 // https://github.com/reem/stainless
 //
-#[test]
-fn test_user_structure() {
-    let new_user = some_crate::User {
-        name: "Dave".to_string(),
-        email: "david@mail.com".to_string(),
-        age: 32,
-        user_type: some_crate::UserType::Regular,
-    };
-    assert_eq!("Dave".to_string(), new_user.name);
+
+extern crate some_crate;
+use some_crate::User;
+use some_crate::UserType::Guest;
+use some_crate::UserType::Regular;
+
+struct UserCollection<T, P> {
+    name: String,
+    users: Vec<P>,
+    size: T,
 }
 
 fn main() {
-    let user_type = some_crate::UserType::Regular;
-    println!("{:?}", user_type);
-    let new_user = some_crate::User {
-        name: "Dave".to_string(),
-        email: "david@mail.com".to_string(),
-        age: 32,
-        user_type: some_crate::UserType::Regular,
+    let new_user = User {
+        name: "User 1".to_string(),
+        email: "user@mail.com".to_string(),
+        age: 30,
+        user_type: Guest,
     };
-
-    // println!("{:#?}", new_user);
-
-    // print_user(new_user);
-    new_user.print_user();
+    let user_collection: UserCollection<u8, User> = UserCollection {
+        name: "user collection 1".to_string(),
+        users: vec![new_user],
+        size: 1,
+    };
+    println!("{:?}", user_collection.users);
 }
 
 //
