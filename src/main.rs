@@ -5,6 +5,9 @@
 extern crate regex;
 extern crate some_crate;
 
+//
+// https://github.com/reem/stainless
+//
 #[test]
 fn test_user_structure() {
     let new_user = some_crate::User {
