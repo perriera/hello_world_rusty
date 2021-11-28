@@ -5,6 +5,17 @@
 extern crate regex;
 extern crate some_crate;
 
+#[test]
+fn test_user_structure() {
+    let new_user = some_crate::User {
+        name: "Dave".to_string(),
+        email: "david@mail.com".to_string(),
+        age: 32,
+        user_type: some_crate::UserType::Regular,
+    };
+    assert_eq!("Dave".to_string(), new_user.name);
+}
+
 fn main() {
     let user_type = some_crate::UserType::Regular;
     println!("{:?}", user_type);
