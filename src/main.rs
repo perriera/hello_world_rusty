@@ -3,25 +3,54 @@
 // https://github.com/reem/stainless
 //
 
-fn increase_by_five<'a>(x: &'a u16) -> u16 {
-    x + 5
-}
-
 #[derive(Debug)]
-struct TestStruct<'a> {
-    x: &'a u32,
+struct Hero {
+    name: String,
+    energy: u16,
+    strike: bool,
+}
+#[derive(Debug)]
+struct Goblin {
+    energy: u16,
+    strike: bool,
 }
 
-impl<'a> TestStruct<'a> {
-    fn return_x(&self) -> &'a u32 {
-        self.x
+impl Hero {
+    fn jump(&self) {}
+}
+
+trait StrikeTrait {
+    fn strike(&mut self);
+}
+
+impl StrikeTrait for Hero {
+    fn strike(&mut self) {
+        self.strike = true;
+    }
+}
+
+impl StrikeTrait for Goblin {
+    fn strike(&mut self) {
+        self.strike = true;
     }
 }
 
 fn main() {
-    let ts = TestStruct { x: &5 };
-    println!("{:?}", ts.x);
-    println!("{:?}", ts.return_x());
+    let mut hero = Hero {
+        name: "Dave".to_string(),
+        energy: 100,
+        strike: false,
+    };
+    let mut goblin = Goblin {
+        energy: 99,
+        strike: false,
+    };
+    println!("{:#?}", hero);
+    hero.strike();
+    println!("{:#?}", hero);
+    println!("{:#?}", goblin);
+    goblin.strike();
+    println!("{:#?}", goblin);
 }
 
 //
