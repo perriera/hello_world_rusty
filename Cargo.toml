@@ -7,3 +7,6 @@ edition = "2021"
 
 [dependencies.some_crate]
 path = "src/some_crate"
+
+[dependencies]
+regex = "1.5.4"

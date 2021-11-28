@@ -2,6 +2,7 @@
 // https://levelup.gitconnected.com/rust-with-visual-studio-code-46404befed8
 //
 
+extern crate regex;
 extern crate some_crate;
 
 fn main() {
