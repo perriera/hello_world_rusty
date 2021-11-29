@@ -10,3 +10,4 @@ path = "src/some_crate"
 
 [dependencies]
 regex = "1.5.4"
+rand = "0.4"
